@@ -22,6 +22,7 @@ public class Owner {
         this.houses = houses;
     }
 
+
     public int getOwnerId() {
         return ownerId;
     }

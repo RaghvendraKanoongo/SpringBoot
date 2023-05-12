@@ -1,7 +1,10 @@
 package com.Spring_REST_Mapping.Spring_Rest_Mapping.Service;
 
 import com.Spring_REST_Mapping.Spring_Rest_Mapping.Entity.House;
+import com.Spring_REST_Mapping.Spring_Rest_Mapping.Entity.Owner;
 import com.Spring_REST_Mapping.Spring_Rest_Mapping.Repository.HouseRepository;
+import com.Spring_REST_Mapping.Spring_Rest_Mapping.Repository.OwnerRepository;
+import com.Spring_REST_Mapping.Spring_Rest_Mapping.dto.HouseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,15 +14,18 @@ public class HouseServiceImpl implements HouseService {
 
     @Autowired
     HouseRepository houseRepository;
+    @Autowired
+    OwnerRepository ownerRepository;
     @Override
     public List<House> getAllHouses() {
         return houseRepository.findAll();
     }
 
     @Override
-    public House add(House house) {
-
-        return houseRepository.save(house);
+    public House add(HouseDto house) {
+        Owner owener1 = ownerRepository.findById(house.getOwnerId()).orElse(null);
+        House house1 = new House(house.getHouseId(),owener1);
+        return houseRepository.save(house1);
     }
 
     @Override

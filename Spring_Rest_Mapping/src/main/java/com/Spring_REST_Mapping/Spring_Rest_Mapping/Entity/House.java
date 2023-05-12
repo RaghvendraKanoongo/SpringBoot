@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 public class House {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int houseNo;
+
     @ManyToOne
     @JoinColumn(name = "Owner_Id")
     private Owner owner;

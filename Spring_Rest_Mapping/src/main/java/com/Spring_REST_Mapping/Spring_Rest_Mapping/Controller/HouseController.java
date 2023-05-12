@@ -2,6 +2,7 @@ package com.Spring_REST_Mapping.Spring_Rest_Mapping.Controller;
 
 import com.Spring_REST_Mapping.Spring_Rest_Mapping.Entity.House;
 import com.Spring_REST_Mapping.Spring_Rest_Mapping.Service.HouseService;
+import com.Spring_REST_Mapping.Spring_Rest_Mapping.dto.HouseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +25,7 @@ public class HouseController {
     }
 
     @PostMapping
-    private House add(@RequestBody House house){
+    private House add(@RequestBody HouseDto house){
         System.out.println("inside house add ");
         return houseService.add(house);
     }

@@ -11,3 +11,15 @@ public class SpringRestMappingApplication {
 	}
 
 }
+
+//{
+//		"ownerId": 2,
+//		"ownerName": "Ram",
+//
+//		"houses": [
+//		{
+//		"houseNo":2
+//		}
+//		]
+//
+//}
