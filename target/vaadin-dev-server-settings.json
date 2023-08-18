@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/./frontend/generated/jar-resources",
+  "staticOutput": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/target/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/src/main/dev-bundle/config",
+  "jarResourcesFolder": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/./frontend/generated/jar-resources",
+  "themeName": "flowcrmtutorial",
+  "clientServiceWorkerSource": "/Users/raghvendrakanoongo1/Desktop/flow-crm-tutorial/target/sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
